@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/kidsShoesInfo.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section id="Header" class="bg-light">
+
+        <header id="TopHeader">
+            <div>
+                <h1 id="suitUp">SuitUp</h1>
+            </div>
+            <div class="wrapper">
+                <div class="search-box">
+                    <input type="text" placeholder="looking for..?" autocomplete="off" name="" id="">
+                    <div class="searchIcon"><i class="fas fa-search"></i></div>
+                </div>
+            </div>
+            <div id="Icons">
+                <a href=""><img src="icons/personal.png" class="iconet"></a>
+                <a href=""><img src="icons/purchase.png" class="iconet"></a>
+                <a href=""><img src="icons/favorite.png" class="iconet"></a>
+            </div>
+        </header>    
+        <header id="DownHeader">
+                <a href="#all" class="choiceToView" class="text-dark">All</a>
+                <a href="#sale" class="choiceToView" class="text-dark">Sale</a>
+                <a href="#women" class="choiceToView" class="text-dark">Women</a>
+                <a href="#kids" class="choiceToView" class="text-dark">Kids</a>
+                <a href="#men" class="choiceToView" class="text-dark">Men</a>
+                <a href="#shoes" class="choiceToView" class="text-dark">Shoes</a>
+                <a href="#sport" class="choiceToView" class="text-dark">Sport</a>
+                <a href="#bags" class="choiceToView" class="text-dark">Bags</a>
+                <a href="#electronics" class="choiceToView" class="text-dark">Electronics</a>
+        </header>
+    
+    </section>
+    <div class="flex" style="padding-top: 180px;">
+        <div class="h100">
+            <img src="images/1pc Quilted Square Women's Crossbody Bag.jpeg" alt="" class="clothesImg">
+        </div>
+
+        <div class="h100">
+            <p class="shoesName">1pc Quilted Square Women's Crossbody Bag.</p>
+            <p class="shoesPrice">19.94$</p>
+            <p class="break">--------------------------------------------------------------------------</p>
+            <p class="shoesSize">SIZE:</p>
+            <div>
+                <span class="sizes">25-26</span>
+                <span class="sizes">27-28</span>
+                <span class="sizes">29-30</span>
+                <span class="sizes">31-32</span>
+                <span class="sizes">33-34</span>
+            </div><br>
+            <p class="break">--------------------------------------------------------------------------</p>
+            <div style="display: flex;">
+                <span class="Qty">Qty:</span>
+                <div class="containerQty">
+                    <button class="btnQty" id="decrement" onclick="stepper(this)"> - </button>
+                    <input type="number" class="orderQty" min="1" max="10" step="1" value="1" id="orderQty" readonly>
+                    <button class="btnQty" id="increment" onclick="stepper(this)"> + </button>
+                </div>
+            </div>
+            <button class="addCart">ADD TO CART</button>
+        </div>
+    </div>
+
+    <script src="js/kidsShoesInfo.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
